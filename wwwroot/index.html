@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getTime()">Get Time</button>
+    <h2 id="current-date-time"></h2>
+    <script>
+        const getTime = async () => {
+            const response = await fetch('/api/datetime');
+            const dateTime = await response.text();
+            document.getElementById('current-date-time').textContent = dateTime;
+        }
+    </script>
+</body>
+</html>
