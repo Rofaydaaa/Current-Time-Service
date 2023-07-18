@@ -30,7 +30,7 @@ bld/
 [Ll]og/
 
 # Visual Studio project files
-*.csproj
+#*.csproj
 *.sln
 *.csproj.user
 
